@@ -26,7 +26,12 @@ function AllCountries() {
       <div className="container">
         <div className="row">
           {state.map((country) => (
-            <Country name={country.name} flag={country.flag} />
+            <Country
+              alpha2Code={country.alpha2Code}
+              name={country.name}
+              flag={country.flag}
+              key={country.alpha2Code}
+            />
           ))}
         </div>
       </div>

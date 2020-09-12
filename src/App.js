@@ -3,6 +3,8 @@ import AllCountries from "./AllCountries";
 import Header from "./Header";
 import Visited from "./Visited";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Country from "./Country";
+import CountryDetails from "./CountryDetails";
 
 function App() {
   return (
@@ -13,9 +15,12 @@ function App() {
             <Header />
             <Visited />
           </Route>
-          {/* <Route path="/login">
-            <h1>Login</h1>
-          </Route> */}
+
+          <Route path="/:id">
+            <Header />
+            <CountryDetails />
+          </Route>
+
           <Route path="/">
             <Header />
             <AllCountries />

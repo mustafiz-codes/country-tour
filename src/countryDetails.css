@@ -1,0 +1,9 @@
+.countryDetails {
+  width: 40%;
+  text-align: center;
+}
+.countryDetails h2,
+.countryDetails p,
+.countryDetails img {
+  width: 100%;
+}

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-function Visited() {
+function Visited(props) {
+  console.log(props);
   return (
     <div>
       <h1>Visited</h1>
